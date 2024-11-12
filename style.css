@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --fonte-principal: "Poppins";
+    --cor-fonte:white;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.esquerda,
+.direita {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.direita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_direita {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+
+.fundo {
+    width: 70%;
+    
+    
+    
+}
+
+.cardfront,
+.cardback,.dados {
+    position: absolute;
+    width: 450px;
+    height: 250px;
+}
+
+.cardfront,.dados {
+    top: 23%;
+    left: 43%;
+}
+
+.cardback {
+    top: 57%;
+    left: 54%;
+}
+
+.dados {
+   
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    flex-direction: column;
+    z-index: 2;
+    font-size: 20px;
+    color: var(--cor-fonte);
+}
+
+.dados2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+p{
+    padding: 0em 1em;
+}
+
+.cvc {
+    position: absolute;
+    top: 69%;
+    left: 92%;
+    z-index: 2;
+}
+
+.nomecartao,.cartaonumero{
+    height: 50px;
+    width: 405px;
+    border-radius: 6px;
+    font-size: 18px; 
+}
+
+.nomecartao,.cartaonumero,.cartaoexp,.cvccartao{
+    font-weight: 500;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    padding-left:15px ;
+}
+.cartaoexp,.cvccartao {
+    height: 50px;
+    border-radius: 6px;
+    
+}
+
+.cvccartao {
+    width: 190px;
+   
+}
+.cartaoexp{
+    width: 60px; 
+    
+}
+
+.expcvc,
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.55em;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+::placeholder {
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.botao {
+    height: 3.5em;
+    border-radius: 6px;
+    background-color: hsl(278, 68%, 11%);
+    color: var(--cor-fonte);
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+}
+
+.numerocartao {
+    font-size: 34px;
+    margin: 0;
+}
+.erro{
+    font-size: 12px;
+    color: red;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;}
+
+        @media screen and (max-width:667px ) {
+             
+            body{
+                flex-direction: column;
+            }
+            
+            .esquerda,
+            .direita {
+                overflow: visible;
+                position: relative;
+
+            }
+            .fundo{
+                width: 100%;
+                height: 80%;
+                
+            }
+            
+            .cardfront,
+            .cardback,.dados {
+            
+                width: 60%;
+                height: 45%;
+            }
+            .esquerda{
+                height: 50%;
+            }
+            
+            .cardfront,.dados {
+                top: 59%;
+                left: 23%;
+                z-index: 5;
+                
+                  
+            }
+            
+            .cardback {
+                top: 30%;
+                left: 28%;
+            }
+            .dados,.cvc{
+               
+               font-size: 12px;
+               z-index: 10;
+            }
+            .numerocartao{
+                font-size: 18px;
+            }
+            .cvc {
+                
+                top: 49.5%;
+                left: 76%;
+                
+            }
+            .container_direita{
+                padding:3em 0 3em 0;
+            }
+            
+            
+            
+
+            
+
+            
+
+
+        }
+         
+             
+            
+            
+
+
+         
+        

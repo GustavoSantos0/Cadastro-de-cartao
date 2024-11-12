@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Card</title>
+</head>
+<body>
+    <section class="esquerda">
+        
+        <img src="images/bg-main-desktop.png" alt="" class="fundo">
+        <div class="container_esquerda">
+             <div class="dados">
+                <p class="numerocartao" id="cartaonumero">0000 0000 0000 0000</p>
+                <div class="dados2">
+                <p id="nomecartao">JANE APPLESEED</p>
+                <p id="expcartao">00/00</p>
+                </div>
+            </div>
+            <img src="images/bg-card-front.png" alt="" class="cardfront">
+            <div class="cvc" id="cvccard">000</div>
+            <img src="images/bg-card-back.png" alt="" class="cardback">
+        </div>
+      </section>
+
+      <section class="direita">
+        <div class="container_direita">
+            <label for="cardholder">CARDHOLDER NAME</label>
+            <input type="text" class="nomecartao" id="cardname" placeholder="e.g. Jane Appleseed">
+            <div class="erro" id="error"></div>
+
+            <label for="cardholder">CARD NUMBER</label>
+            <input type="text" class="cartaonumero" id="cardnumber" placeholder="e.g. 1234 5678 9123 0000"
+            pattern="\d{4} \d{4} \d{4} \d{4}" title="Formato: 0000 0000 0000 0000" required>
+            <div class="erro" id="error2"></div>
+
+            <div class="expcvc">
+                <div class="campo">
+                    <label for="validcard">EXP. DATE (MM/YY)</label>
+                    <div class="input-group">
+                        <input type="number" class="cartaoexp" id="validcardMM" placeholder="MM">
+                        <input type="number" class="cartaoexp" id="validcardYY" placeholder="YY">
+                    </div>
+                    <div class="erro" id="error3"></div>
+                </div>
+            
+                <div class="campo">
+                    <label for="cardname">CVC</label>
+                    <input type="text" class="cvccartao" id="cvccartao" placeholder="e.g. 123">
+                    <div class="erro" id="error4"></div>
+                </div>
+            </div>
+
+            <button class="botao" id="confirm">Confirm</button>
+        </div>
+    <script src="script.js"></script>
+      </section>
+</body>
+</html>
